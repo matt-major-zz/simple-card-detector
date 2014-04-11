@@ -1,0 +1,35 @@
+<!-- Simple Card Type Detector - Matt Major -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Card Detector</title>
+        <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+        <style>body{margin-top:25px;}</style>
+    </head>
+    <body>
+        <div class="container" style="text-align: center;">
+            <h1>Simple Card Detector</h1>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <div class="input-group">
+                        <span class="input-group-addon">Card Number</span>
+                        <input type="text" class="form-control" id="former"/>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <p></p>
+                    <p id="result">Awaiting valid card number...</p>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+        
+        <!-- Load JavaScript Last! -->
+        <script src="carddetector.js"></script>
+    </body>
+</html>
