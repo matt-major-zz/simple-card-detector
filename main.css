@@ -6,7 +6,7 @@ body {
 	margin: 0;
 	font-size: 1em;
 	color: rgb(255, 255, 255);
-	background: url(img/bg.jpg) fixed center center no-repeat;
+	background: url(img/bg.jpg) no-repeat scroll 0px 100% / cover transparent;
 }
 
 p, h1, h2, h3, h4, h5 {
@@ -34,7 +34,7 @@ p, h1, h2, h3, h4, h5 {
 	width: 50%;
 	min-width: 500px;
 	text-align: left;
-	background: rgba(0,0,0,0.65);
+	background: rgba(0,0,0,0.35);
 	border-radius: 6px;
 }
 
