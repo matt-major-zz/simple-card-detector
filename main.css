@@ -1,0 +1,76 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	font-size: 1em;
+	color: rgb(255, 255, 255);
+	background: url(img/bg.jpg) fixed center center no-repeat;
+}
+
+p, h1, h2, h3, h4, h5 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	margin: 0;
+	padding: 0;
+}
+
+#top {
+	display: table;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+#top .inner {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#top .inner-text {
+	margin: 0 auto;
+	padding: 2em;
+	width: 50%;
+	min-width: 500px;
+	text-align: left;
+	background: rgba(0,0,0,0.65);
+	border-radius: 6px;
+}
+
+#top .input-group {
+	margin-top: 10px;
+}
+
+#top .form-control {
+	height: auto;
+	font-size: 3em;
+}
+
+#top .card-image {
+	padding: 1em;
+	text-align: center;
+}
+
+#top .card-image p {
+	font-size: 2em;
+}
+
+#top #example-cards {
+	padding-top: 10px;
+	border-top: 1px solid rgba(100, 100, 100, 0.5);
+}
+
+#top #example-cards table {
+	margin-top: 3px;
+	font-size: 1em;
+}
+
+#top #example-cards img {
+	height: 30px;
+}
+
+.copyright {
+	padding: 2px;
+	color: rgb(222, 222, 222);
+}

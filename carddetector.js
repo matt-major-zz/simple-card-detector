@@ -1,20 +1,23 @@
+//Grab the element to change and store it, save us rescanning the DOM each time
+var elem = document.getElementById('result');
+
 //Function to parse the cardNumber and match it up to a card type
 function getCreditCardType(cardNumber) {
     var result = 'unknown';
     
     //Mastercard
     if (/^5[1-5]/.test(cardNumber)) {
-        result = 'MasterCard';
+        result = 'mastercard';
     }
     
     //Visa
     else if (/^4/.test(cardNumber)) {
-        result = 'Visa';
+        result = 'visa';
     }
     
     //Amex
     else if (/^3[47]/.test(cardNumber)) {
-        result = 'Amex';
+        result = 'amex';
     }
     
     return result;
@@ -23,15 +26,14 @@ function getCreditCardType(cardNumber) {
 //Function to trigger the check when use enters a number or pastes it in to the field
 function handleEvent(event) {
     var value = event.target.value,
-        type = getCreditCardType(value),
-        elem = document.getElementById('result');
+        type = getCreditCardType(value);
     
     //Check if the card type is unknown
     if (type === 'unknown') {
-        elem.innerHTML = "Awaiting valid card number...";
+        elem.src = "img/credit.png";
     } else {
         //Otherwise display the type. Could do this as an image?
-        elem.innerHTML = "The card type is " + type;
+        elem.src = "img/" + type + ".png";
     }
 }
 

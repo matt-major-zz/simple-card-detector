@@ -4,31 +4,51 @@
     <head>
         <title>Card Detector</title>
         <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
-        <style>body{margin-top:25px;}</style>
+        <link rel="stylesheet" type="text/css" href="main.css">
     </head>
     <body>
-        <div class="container" style="text-align: center;">
-            <h1>Simple Card Detector</h1>
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4">
+        <header id="top">
+            <div class="inner">
+                <div class="inner-text">
+                    <h1>Card Type Detector</h1>
+                    <p>Enter a card number into the field below to find out which provider it has. Currently only Visa, MasterCard and American Express are supported.</p>
                     <div class="input-group">
                         <span class="input-group-addon">Card Number</span>
                         <input type="text" class="form-control" id="former"/>
                     </div>
+                    <div class="card-image">
+                        <p>The type of card you have entered is <img id="result" src="img/credit.png" alt="default card icon" />
+                    </div>
+                    <div id="example-cards">
+                        <p>Not got a card to try this with? Here's some example (<i>fake</i>) numbers.</p>
+                        <table class="table table-compact">
+                            <tr>
+                                <th>Provider</th>
+                                <th>Card Number</th>
+                            </tr>
+                            <tr>
+                                <td><img id="result" src="img/amex.png" alt="American Express card icon" /> American Express</td>
+                                <td>378282246310005</td>
+                            </tr>
+                            <tr>
+                                <td><img id="result" src="img/mastercard.png" alt="MasterCard card icon" /> MasterCard</td>
+                                <td>5555555555554444</td>
+                            </tr>
+                            <tr>
+                                <td><img id="result" src="img/visa.png" alt="Visa card icon" /> Visa</td>
+                                <td>4012888888881881</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p class="copyright">
+                        MasterCard&reg; is a registered trademark of MasterCard International, Inc. 
+                        American Express&reg; is a registered trademark of American Express Company. 
+                        Visa&reg; is a registered trademark of Visa International Service Association.
+                    </p>
+                    <p class="copyright">&copy; 2014 - Matt Major</p>
                 </div>
-                <div class="col-md-4"></div>
             </div>
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4">
-                    <p></p>
-                    <p id="result">Awaiting valid card number...</p>
-                </div>
-                <div class="col-md-4"></div>
-            </div>
-        </div>
-        
+        </header>
         <!-- Load JavaScript Last! -->
         <script src="carddetector.js"></script>
     </body>
